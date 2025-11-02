@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#6a8eff"/>
+      <stop offset="1" stop-color="#4169e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)" rx="14"/>
+  <g fill="#fff" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="50" y="110" font-size="36" font-weight="700">Sistema de agendamento</text>
+    <rect x="50" y="150" width="220" height="120" rx="8" fill="rgba(255,255,255,0.12)" />
+    <text x="80" y="200" font-size="20" fill="rgba(255,255,255,0.95)">Calendário</text>
+    <text x="80" y="235" font-size="14" fill="rgba(255,255,255,0.9)">Reservas e horários</text>
+  </g>
+</svg>

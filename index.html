@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lana Claudia — Desenvolvedora Fullstack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+  <script src="https://kit.fontawesome.com/a2d9d6bc8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar" id="avatar">
+          <img src="logo.jpeg" alt="Foto Lana" onerror="this.style.display='none'">
+          
+        </div>
+        <div>
+          <h1 class="name">Lana Claudia</h1>
+          <p class="role">Desenvolvedora Fullstack • Vue.js • Node.js • PostgreSQL</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn-outline" href="Curriculo-LanaClaudia.pdf" download><i class="fas fa-download"></i> CV</a>
+      </nav>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="sobre" class="hero dark-hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Olá, eu sou a <span class="accent">Lana</span>.</h2>
+          <p class="lead">
+           Sou desenvolvedora Full Stack com experiência em Vue.js, Node.js e PostgreSQL, atuando no desenvolvimento de sistemas completos, desde o front-end até o back-end. Trabalhei na Máximo SMS, onde participei de projetos de inovação e automação de processos laboratoriais. Desenvolvi também sistemas autorais, como o Sistema de Agendamento Empório das Divas e o Sistema de Atestados, aplicando boas práticas de usabilidade, integração e performance. Tenho foco em entregar soluções eficientes, escaláveis e com design funcional, sempre buscando evoluir profissionalmente e explorar novas tecnologias.
+           
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projetos"><i class="fas fa-eye"></i> Ver Projetos</a>
+            <a class="btn btn-muted" href="mailto:lanasantosgg@gmail.com"><i class="fas fa-envelope"></i> Contato</a>
+          </div>
+        </div>
+
+        <div class="hero-right profile-card">
+          <div class="profile-meta">
+            <div class="avatar-large">
+              <img src="foto.jpg" alt="Lana" onerror="this.style.display='none'">
+              <span class="initials-large">LC</span>
+            </div>
+            <div>
+              <strong class="p-title">Lana Gonçalves</strong>
+              <div class="muted">Desenvolvedora Fullstack</div>
+            </div>
+          </div>
+          <p class="small muted summary">
+            Crio SPAs e APIs REST integradas, aplicando boas práticas e deploy em ambientes modernos como Vercel e Docker.
+          </p>
+          <ul class="quick-stats">
+            <li><strong>Vue</strong><span>Frontend</span></li>
+            <li><strong>Node</strong><span>Backend</span></li>
+            <li><strong>PostgreSQL</strong><span>DB</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h3 class="section-title">Habilidades</h3>
+        <div class="skills-grid">
+          <div class="skill"><div class="skill-icon">💻</div><h4>JavaScript</h4><p class="muted">ES6+, arquitetura limpa e TDD.</p></div>
+          <div class="skill"><div class="skill-icon">⚙️</div><h4>Node.js</h4><p class="muted">APIs REST, Express e integração com bancos.</p></div>
+          <div class="skill"><div class="skill-icon">🧩</div><h4>Vue.js</h4><p class="muted">Componentização e interface reativa.</p></div>
+          <div class="skill"><div class="skill-icon">🗄️</div><h4>PostgreSQL/mySQL</h4><p class="muted">Modelagem e consultas otimizadas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Projetos</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img data-base="assets/agendamento" src="assets/emporio.png" alt="Capa do Sistema de agendamento" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h4>Sistema de agendamento</h4>
+              <p class="muted"> Sistema desenvolvido para salão de beleza e adptável para outros ramos, com hospedagem e utilização real por clientes.
+ • Múltiplos serviços, painel administrativo, cadastro de horários e confirmação automática via API WhatsApp.
+ Tecnologias: Vue.js, JavaScript, Node.js, GitHub, Youtrack, Trello.
+ Link: emporiodasddivas.vercel.app
+              <p class="muted">link — <a href="https://emporiodasdivas.vercel.app/" target="_blank" rel="noopener noreferrer">https://emporiodasdivas.vercel.app</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <img data-base="assets/prunmo" src="assets/prunmo.png" alt="Capa do Sistema Prunmo" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h4>Sistema Prunmo</h4>
+              <p class="muted"> Sistema criado voltado para empresa de engenharia civil com o objetivo de automatizar a leitura, análise e cálculo de critérios de atestados
+ técnicos de editais CAT.
+ A aplicação permite que o usuário importe um arquivo Excel do edital, contendo tópicos,
+ subtópicos e itens. O sistema realiza a leitura automática e estruturada do arquivo, inserindo os
+ dados em uma tabela hierárquica. Em seguida, o usuário define os critérios desejados, e o sistema
+ faz o cálculo automático dos valores correspondentes, permitindo a impressão dos resultados
+ finais em PDF.
+ Tecnologias: Vue.js, JavaScript, Node.js, GitHub, Youtrack, Trello.</p>
+            </div>
+          </article>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h3 class="section-title">Experiência</h3>
+        
+
+          <div class="timeline-item">
+            <div class="timeline-date">2024 — 2025</div>
+            <div class="timeline-body">
+              <h4>Maximo SMS — Auxiliar de Desenvolvimento</h4>
+              <p class="muted">Atuação como desenvolvedora front-end e back-end, participando de projetos de inovação da
+ empresa.
+ • Desenvolvimento de um sistema de monitoramento desktop, criando dashboards interativos e
+ listas dinâmicas, proporcionando uma visão clara e organizada dos dados em tempo real.
+ • Implementação do front-end e back-end de um sistema de gestão, com interface intuitiva,
+ integração total e funcionalidade otimizada.
+ Tecnologias: Vue.js, JavaScript, Node.js, GitHub, Youtrack, Trello.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Contato</h3>
+        <p class="section-sub">Vamos conversar — aberta a oportunidades e colaborações.</p>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form">
+            <label>Nome</label><input type="text" id="nome" required />
+            <label>Email</label><input type="email" id="email" required />
+            <label>Mensagem</label><textarea id="mensagem" rows="5"></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h4>Links</h4>
+            <p><strong>Email:</strong> <a href="mailto:lanasantosgg@gmail.com">lanasantosgg@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/lanaclaudias" target="_blank">github.com/lanaclaudias</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lanagoncalves" target="_blank">linkedin.com/in/lanagoncalves</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="ano"></span> Lana Claudia</div>
+      <div class="socials">
+        <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/seuperfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
